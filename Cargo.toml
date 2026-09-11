@@ -22,7 +22,7 @@ use_lz4_flex = ["lz4_flex"]
 use_lz4-sys = ["lz4-sys", "libc"]
 
 [dependencies]
-lz4_flex = { version = "0.10", optional = true, default-features = false, features = ["std", "safe-encode", "safe-decode"] }
-lz4-sys = { version = "1.9", optional = true }
+lz4_flex = { version = "0.14", optional = true, default-features = false, features = ["std", "safe-encode", "safe-decode"] }
+lz4-sys = { version = "1.11", optional = true }
 libc = { version = "0.2", optional = true }
-twox-hash = { version = "1", default-features = false }
+twox-hash = { version = "2", default-features = false, features = ["xxhash32"] }
